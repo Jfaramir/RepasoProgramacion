@@ -7,6 +7,7 @@ var MobileLibrary = /** @class */ (function () {
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
     Object.defineProperty(MobileLibrary.prototype, "gName", {
         get: function () {
@@ -31,7 +32,7 @@ var MobileLibrary = /** @class */ (function () {
     });
     Object.defineProperty(MobileLibrary.prototype, "gTotalPrice", {
         get: function () {
-            return this.totalPriceCalculation();
+            return this.totalPrice;
         },
         enumerable: false,
         configurable: true
@@ -46,6 +47,19 @@ var MobileLibrary = /** @class */ (function () {
         }
         return auxPrecio;
     };
+    /**
+     * printLibrary
+     */
+    MobileLibrary.prototype.printLibrary = function () {
+        var stringAux = "This is all my mobiles:\n";
+        for (var i = 0; i < this.mobiles.length; i++) {
+            stringAux = stringAux + "The characteristics of the mobile " + this.mobiles[i].gName + " are: \n" + "Name: " + this.mobiles[i].gName + "\n" +
+                "Model: " + this.mobiles[i].gModel + "\n" + "Trademark: " + this.mobiles[i].gTrademark + "\n" + "SD Size: " + this.mobiles[i].gSdSize + "\n" +
+                "Color: " + this.mobiles[i].gColor + "\n" + "Is 5g?: " + this.mobiles[i].gIs5G + "\n" + "Number of Cameras: " + this.mobiles[i].gCameraNumber + "\n\n";
+        }
+        stringAux += "Price overall: " + this.totalPriceCalculation();
+        return stringAux;
+    };
     return MobileLibrary;
 }());
 exports.MobileLibrary = MobileLibrary;
@@ -56,3 +70,4 @@ var arrayMoviles;
 arrayMoviles = [movil1, movil2, movil3];
 var m1 = new MobileLibrary("Juan Pablo", "Madrid", arrayMoviles);
 //console.log(m1.totalPriceCalculation());
+console.log(m1.printLibrary());
