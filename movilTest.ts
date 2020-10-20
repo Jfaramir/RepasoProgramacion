@@ -21,6 +21,7 @@ class Moviles {
 
         return movil;
     }
+
 }
 
 console.log(movil1);
@@ -35,5 +36,3 @@ arrayMoviles = [movil1,movil2,movil3];
 var m1 = new Moviles(arrayMoviles);
 
 console.log(m1.getAttributes());
-
-// aaaaaaaaaaaa
