@@ -1,4 +1,4 @@
-export class repasoWhile {
+export class RepasoWhile {
     constructor() {
         
     }

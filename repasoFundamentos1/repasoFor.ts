@@ -1,4 +1,4 @@
-export class repasoFor {
+export class RepasoFor {
     constructor() {
         
     }

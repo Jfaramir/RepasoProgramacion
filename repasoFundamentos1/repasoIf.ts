@@ -1,4 +1,4 @@
-export class repasoIf {
+export class RepasoIf {
     constructor() {
         
     }

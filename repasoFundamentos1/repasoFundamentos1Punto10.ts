@@ -1,8 +1,8 @@
-import { repasoIf } from "./repasoIf";
-import { repasoFor } from "./repasoFor";
+import { RepasoIf } from "./repasoIf";
+import { RepasoFor } from "./repasoFor";
 
-var rI = new repasoIf();
-var rF = new repasoFor();
+var rI = new RepasoIf();
+var rF = new RepasoFor();
 
 class Punto10 {
     constructor() {

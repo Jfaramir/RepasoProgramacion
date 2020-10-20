@@ -1,8 +1,8 @@
-import { repasoFor } from "./repasoFor";
+import { RepasoFor } from "./repasoFor";
 
 
 
-var r1 = new repasoFor();
+var r1 = new RepasoFor();
 const arrayColores:string[] = ["rojo","azul","morado","amarillo"];
 const arrayPalabras1:string[] = ["coche","camion","moto","caballo"];
 const arrayPalabras2:string[] = ["el","nombre","del","viento"];

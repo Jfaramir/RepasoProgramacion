@@ -1,8 +1,8 @@
-import { repasoIf } from "./repasoIf";
+import { RepasoIf } from "./repasoIf";
 
 
 
-var r1 = new repasoIf();
+var r1 = new RepasoIf();
 const fecha = new Date("2018/01/30");
 
 console.log(r1.signoZodiaco(fecha));
