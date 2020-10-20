@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var repasoFor_1 = require("./repasoFor");
+var r1 = new repasoFor_1.repasoFor();
+var arrayColores = ["rojo", "azul", "morado", "amarillo"];
+var arrayPalabras1 = ["coche", "camion", "moto", "caballo"];
+var arrayPalabras2 = ["el", "nombre", "del", "viento"];
+console.log(r1.colorEnArcoiris(arrayColores));
+console.log(r1.contarCaracteres(arrayPalabras1));
+console.log(r1.contarCaracteres(arrayPalabras2));
