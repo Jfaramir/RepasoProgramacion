@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var movil_1 = require("./repasoFundamentos2/movil");
+var movil_1 = require("../repasoFundamentos2/movil");
 var libreriaMoviles_1 = require("./libreriaMoviles");
 var movil1 = new movil_1.Mobile("Nokia 3210", "63306", "Nokia", 8, "gris", false, 1, 350);
 var movil2 = new movil_1.Mobile("iPhone3G", "A1241", "Apple", 8, "negro", false, 2, 199);

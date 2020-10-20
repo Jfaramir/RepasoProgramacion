@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MobileLibrary = void 0;
-var movil_1 = require("./repasoFundamentos2/movil");
+var movil_1 = require("../repasoFundamentos2/movil");
 var MobileLibrary = /** @class */ (function () {
     function MobileLibrary(name, location, mobiles) {
         this.name = name;

@@ -1,4 +1,4 @@
-import { Mobile } from "./repasoFundamentos2/movil";
+import { Mobile } from "../repasoFundamentos2/movil";
 
 
 export class MobileLibrary {
