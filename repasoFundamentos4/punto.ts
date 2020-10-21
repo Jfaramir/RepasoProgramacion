@@ -82,9 +82,10 @@ export class Punto {
             }
         }
 
-        var stringAux:string= "(";
-        stringAux += puntos[numeroPuntoMasCercano].x + "," + puntos[numeroPuntoMasCercano].y + ")"
-        return stringAux;
+        var puntoAux = new Punto(0,0);
+        puntoAux.x = puntos[numeroPuntoMasCercano].x;
+        puntoAux.y = puntos[numeroPuntoMasCercano].y;
+        return puntoAux;
     }
 
     

@@ -1,13 +1,13 @@
 "use strict";
-exports.__esModule = true;
-exports.repasoWhile = void 0;
-var repasoWhile = /** @class */ (function () {
-    function repasoWhile() {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RepasoWhile = void 0;
+var RepasoWhile = /** @class */ (function () {
+    function RepasoWhile() {
     }
     /**
      * imprimirImpar
      */
-    repasoWhile.prototype.imprimirImpar = function (numero) {
+    RepasoWhile.prototype.imprimirImpar = function (numero) {
         var contador;
         var impar;
         contador = 1;
@@ -15,24 +15,36 @@ var repasoWhile = /** @class */ (function () {
         while (contador <= numero) {
             if (contador % 2 != 0) {
                 impar.push(contador);
+                console.log(contador);
             }
             contador++;
         }
-        return impar;
     };
     /**
      * hayPar
      */
-    repasoWhile.prototype.hayPar = function (arrayNumeros) {
+    RepasoWhile.prototype.hayPar = function (arrayNumeros) {
         var contador = 0;
         while (contador != arrayNumeros.length) {
             if (arrayNumeros[contador] % 2 == 0) {
                 return "Hay par";
             }
-            console.log(arrayNumeros[contador]);
             contador++;
         }
     };
-    return repasoWhile;
+    /**
+     * arrayRevertido
+     */
+    RepasoWhile.prototype.arrayRevertido = function (array) {
+        var reversion;
+        var arrayLength = array.length - 1;
+        reversion = [];
+        while (arrayLength >= 0) {
+            reversion.push(array[arrayLength]);
+            arrayLength--;
+        }
+        return reversion;
+    };
+    return RepasoWhile;
 }());
-exports.repasoWhile = repasoWhile;
+exports.RepasoWhile = RepasoWhile;

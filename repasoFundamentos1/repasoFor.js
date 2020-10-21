@@ -1,13 +1,13 @@
 "use strict";
-exports.__esModule = true;
-exports.repasoFor = void 0;
-var repasoFor = /** @class */ (function () {
-    function repasoFor() {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RepasoFor = void 0;
+var RepasoFor = /** @class */ (function () {
+    function RepasoFor() {
     }
     /**
      * colorEnArcoiris
      */
-    repasoFor.prototype.colorEnArcoiris = function (arrayColores) {
+    RepasoFor.prototype.colorEnArcoiris = function (arrayColores) {
         var arrayAux;
         arrayAux = [];
         for (var i = 0; i < arrayColores.length; i++) {
@@ -24,13 +24,28 @@ var repasoFor = /** @class */ (function () {
     /**
      * contarCaracteres
      */
-    repasoFor.prototype.contarCaracteres = function (arrayPalabras) {
+    RepasoFor.prototype.contarCaracteres = function (arrayPalabras) {
         var contadorCaracteres = 0;
         for (var i = 0; i < arrayPalabras.length; i++) {
             contadorCaracteres += arrayPalabras[i].length;
         }
         return contadorCaracteres;
     };
-    return repasoFor;
+    /**
+     * todosTienenM
+     */
+    RepasoFor.prototype.todosTienenM = function (array) {
+        var contador = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (array[i].charAt(0) == "M") {
+                contador++;
+            }
+        }
+        if (contador == array.length) {
+            return true;
+        }
+        return false;
+    };
+    return RepasoFor;
 }());
-exports.repasoFor = repasoFor;
+exports.RepasoFor = RepasoFor;

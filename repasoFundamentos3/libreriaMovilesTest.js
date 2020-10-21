@@ -14,3 +14,4 @@ console.log(m1.gName);
 console.log(m1.gTotalPrice);
 console.log(m1.gMobiles);
 //console.log(m1.gtotalPriceCalculation());
+console.log(m1.printLibrary());

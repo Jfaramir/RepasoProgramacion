@@ -34,7 +34,23 @@ export class RepasoFor {
         return contadorCaracteres;
     }
 
-    
+    /**
+     * todosTienenM
+     */
+    public todosTienenM(array:string[]) {
+        var contador:number = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i].charAt(0) == "M") {
+                contador++
+            }
+        }
+
+        if (contador == array.length) {
+            return true;
+        }
+        
+        return false;
+    }
 
 }
 

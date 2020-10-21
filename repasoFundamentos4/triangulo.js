@@ -38,9 +38,9 @@ var Triangulo = /** @class */ (function () {
         var longitudAux2 = 0;
         var longitudAux3 = 0;
         var arrayLados = [];
-        longitudAux1 = Math.sqrt(Math.abs((((this.punto1.gX - this.punto2.gX) * (this.punto1.gX - this.punto2.gX)) + ((this.punto1.gY - this.punto2.gY) * (this.punto1.gY - this.punto2.gY)))));
-        longitudAux2 = Math.sqrt(Math.abs((((this.punto2.gX - this.punto3.gX) * (this.punto2.gX - this.punto3.gX)) + ((this.punto2.gY - this.punto3.gY) * (this.punto2.gY - this.punto3.gY)))));
-        longitudAux3 = Math.sqrt(Math.abs((((this.punto3.gX - this.punto1.gX) * (this.punto3.gX - this.punto1.gX)) + ((this.punto3.gY - this.punto1.gY) * (this.punto3.gY - this.punto1.gY)))));
+        longitudAux1 = this.punto1.calcularDistancia(this.punto2);
+        longitudAux2 = this.punto2.calcularDistancia(this.punto3);
+        longitudAux3 = this.punto3.calcularDistancia(this.punto1);
         arrayLados.push(longitudAux1, longitudAux2, longitudAux3);
         return arrayLados;
     };

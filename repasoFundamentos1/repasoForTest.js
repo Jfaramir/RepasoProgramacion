@@ -1,10 +1,12 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var repasoFor_1 = require("./repasoFor");
-var r1 = new repasoFor_1.repasoFor();
+var r1 = new repasoFor_1.RepasoFor();
 var arrayColores = ["rojo", "azul", "morado", "amarillo"];
 var arrayPalabras1 = ["coche", "camion", "moto", "caballo"];
 var arrayPalabras2 = ["el", "nombre", "del", "viento"];
+var arrayNombres = ["María", "Arcelo", "Mercedes"];
 console.log(r1.colorEnArcoiris(arrayColores));
 console.log(r1.contarCaracteres(arrayPalabras1));
 console.log(r1.contarCaracteres(arrayPalabras2));
+console.log(r1.todosTienenM(arrayNombres));

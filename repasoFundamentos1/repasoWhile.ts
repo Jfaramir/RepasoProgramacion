@@ -15,10 +15,10 @@ export class RepasoWhile {
         while (contador <= numero) {		  
             if (contador%2 != 0) {
                 impar.push(contador);
+                console.log(contador);
             }
             contador++;
         }
-        return impar;
     }
 
     /**
@@ -35,5 +35,19 @@ export class RepasoWhile {
         }
     }
 
+    /**
+     * arrayRevertido
+     */
+    public arrayRevertido(array:string[]) {
+        var reversion:string[];
+        var arrayLength:number = array.length - 1;
+        reversion = [];
+
+        while (arrayLength >= 0) {
+          reversion.push(array[arrayLength]);
+          arrayLength--;
+        }
+        return reversion;
+    }
 
 }
