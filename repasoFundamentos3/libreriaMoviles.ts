@@ -62,7 +62,7 @@ export class MobileLibrary {
      */
     public printLibrary() {
         var stringAux:string = "This is all my mobiles:";
-        stringAux += movil1.toString(arrayMoviles);
+        stringAux += this.mobiles[0].toString(this.mobiles);
         stringAux += "Price overall: " + this.totalPriceCalculation() + "\n";
 
         return stringAux;
@@ -70,14 +70,14 @@ export class MobileLibrary {
     
 }
 
-let movil1 = new Mobile("Nokia 3210","63306","Nokia",8,"gris",false,1,350);
+/* let movil1 = new Mobile("Nokia 3210","63306","Nokia",8,"gris",false,1,350);
 let movil2 = new Mobile("iPhone3G","A1241","Apple",8,"negro",false,2,199);
 let movil3 = new Mobile("Galaxy S10","G9750","Samsung",128,"negro",false,5,599);
 
 var arrayMoviles:Mobile[];
 arrayMoviles = [movil1,movil2,movil3];
 
-var m1 = new MobileLibrary("Juan Pablo","Madrid",arrayMoviles);
+var m1 = new MobileLibrary("Juan Pablo","Madrid",arrayMoviles); */
 
 //console.log(m1.totalPriceCalculation());
-console.log(m1.printLibrary());
+//console.log(m1.printLibrary());
